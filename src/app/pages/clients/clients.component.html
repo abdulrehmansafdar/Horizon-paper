@@ -1,0 +1,83 @@
+<section id="clients" class="bg-emerald-50 py-20">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-slate-900 mb-4">Our Valued Clients & Partners</h2>
+          <p class="text-xl text-slate-600">Building lasting relationships since 2010</p>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-lg">
+          <div class="border-b border-slate-200">
+            <nav class="flex space-x-8 px-6" aria-label="Tabs">
+              <button *ngFor="let tab of tabs" 
+                      (click)="activeTab = tab.id"
+                      [class]="activeTab === tab.id ? 
+                        'border-emerald-500 text-emerald-600 py-4 px-1 border-b-2 font-medium text-sm' : 
+                        'border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 py-4 px-1 border-b-2 font-medium text-sm'">
+                {{ tab.label }}
+              </button>
+            </nav>
+          </div>
+
+          <div class="p-6">
+            <div *ngIf="activeTab === 'clients'">
+              <h3 class="text-2xl text-slate-900 flex items-center font-bold mb-4">
+                <svg class="mr-3 h-6 w-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2V6"></path>
+                </svg>
+                Our Clients
+              </h3>
+              <p class="text-slate-600 mb-6">Trusted by leading companies across the region</p>
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div *ngFor="let client of clients" class="bg-slate-50 p-3 rounded-lg border border-slate-200">
+                  <p class="text-sm text-slate-700 font-medium">{{ client }}</p>
+                </div>
+              </div>
+            </div>
+
+            <div *ngIf="activeTab === 'suppliers'">
+              <h3 class="text-2xl text-slate-900 flex items-center font-bold mb-4">
+                <svg class="mr-3 h-6 w-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Our Suppliers
+              </h3>
+              <p class="text-slate-600 mb-6">Quality materials from trusted suppliers</p>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-3">International Suppliers</h4>
+                  <div class="space-y-2">
+                    <div *ngFor="let supplier of internationalSuppliers" class="bg-slate-50 p-3 rounded-lg border border-slate-200">
+                      <p class="font-medium text-slate-700">{{ supplier.name }}</p>
+                      <p class="text-sm text-slate-600">{{ supplier.location }}</p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900 mb-3">Local Suppliers</h4>
+                  <div class="space-y-2">
+                    <div *ngFor="let supplier of localSuppliers" class="bg-slate-50 p-3 rounded-lg border border-slate-200">
+                      <p class="text-sm text-slate-700 font-medium">{{ supplier }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div *ngIf="activeTab === 'banks'">
+              <h3 class="text-2xl text-slate-900 flex items-center font-bold mb-4">
+                <svg class="mr-3 h-6 w-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                </svg>
+                Banking Partners
+              </h3>
+              <p class="text-slate-600 mb-6">Financial partnerships with leading banks</p>
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div *ngFor="let bank of banks" class="bg-slate-50 p-3 rounded-lg border border-slate-200">
+                  <p class="text-sm text-slate-700 font-medium">{{ bank }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
