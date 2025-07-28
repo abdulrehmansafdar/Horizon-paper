@@ -39,7 +39,7 @@
             <div class="p-6">
               <div class="grid grid-cols-3 gap-3">
                 <span *ngFor="let area of factoryAreas" 
-                      class="border border-slate-300 text-slate-700 px-3 py-2 rounded-md text-xs font-medium text-center">
+                      class="border border-slate-300 text-slate-700 px-3 py-2 rounded-md text-xs font-medium text-center hover:shadow-sm transition-shadow duration-300 hover:bg-green-50">
                   {{ area }}
                 </span>
               </div>
@@ -58,7 +58,7 @@
             </div>
             <div class="p-6 space-y-4">
               <div *ngFor="let company of sisterCompanies" 
-                   class="bg-emerald-50 p-4 rounded-lg border border-emerald-200">
+                   class="bg-emerald-50 p-4 rounded-lg border border-emerald-200 ">
                 <h4 class="font-semibold text-slate-900 mb-1">{{ company.name }}</h4>
                 <p class="text-sm text-slate-600">{{ company.location }}</p>
               </div>
@@ -80,7 +80,7 @@
           <div class="p-6">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               <div *ngFor="let competitor of competitors" 
-                   class="bg-slate-50 p-3 rounded-lg border border-slate-200">
+                   class="bg-slate-50 p-3 rounded-lg border border-slate-200 hover:shadow-sm transition-shadow duration-300 hover:bg-green-50">
                 <p class="text-sm text-slate-700 font-medium">{{ competitor }}</p>
               </div>
             </div>

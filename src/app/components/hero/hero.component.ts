@@ -8,10 +8,17 @@ import { Component } from '@angular/core';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
- stats = [
+  stats = [
     { value: '300', label: 'MT/Day Capacity' },
     { value: '15+', label: 'Years Experience' },
     { value: '300+', label: 'Employees' },
     { value: '100%', label: 'Local Market' }
   ];
+  ScrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+
+    }
+  }
 }

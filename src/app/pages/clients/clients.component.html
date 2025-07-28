@@ -28,7 +28,7 @@
               </h3>
               <p class="text-slate-600 mb-6">Trusted by leading companies across the region</p>
               <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div *ngFor="let client of clients" class="bg-slate-50 p-3 rounded-lg border border-slate-200">
+                <div *ngFor="let client of clients" class="bg-slate-50 p-3 rounded-lg border border-slate-200 hover:shadow-sm transition-shadow duration-300 hover:bg-green-50">
                   <p class="text-sm text-slate-700 font-medium">{{ client }}</p>
                 </div>
               </div>
@@ -46,7 +46,7 @@
                 <div>
                   <h4 class="font-semibold text-slate-900 mb-3">International Suppliers</h4>
                   <div class="space-y-2">
-                    <div *ngFor="let supplier of internationalSuppliers" class="bg-slate-50 p-3 rounded-lg border border-slate-200">
+                    <div *ngFor="let supplier of internationalSuppliers" class="bg-slate-50 p-3 rounded-lg border border-slate-200 hover:shadow-sm transition-shadow duration-300 hover:bg-green-50">
                       <p class="font-medium text-slate-700">{{ supplier.name }}</p>
                       <p class="text-sm text-slate-600">{{ supplier.location }}</p>
                     </div>
@@ -55,7 +55,7 @@
                 <div>
                   <h4 class="font-semibold text-slate-900 mb-3">Local Suppliers</h4>
                   <div class="space-y-2">
-                    <div *ngFor="let supplier of localSuppliers" class="bg-slate-50 p-3 rounded-lg border border-slate-200">
+                    <div *ngFor="let supplier of localSuppliers" class="bg-slate-50 p-3 rounded-lg border border-slate-200 hover:shadow-sm transition-shadow duration-300 hover:bg-green-50">
                       <p class="text-sm text-slate-700 font-medium">{{ supplier }}</p>
                     </div>
                   </div>
@@ -72,7 +72,7 @@
               </h3>
               <p class="text-slate-600 mb-6">Financial partnerships with leading banks</p>
               <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div *ngFor="let bank of banks" class="bg-slate-50 p-3 rounded-lg border border-slate-200">
+                <div *ngFor="let bank of banks" class="bg-slate-50 p-3 rounded-lg border border-slate-200 hover:shadow-sm transition-shadow duration-300 hover:bg-green-50">
                   <p class="text-sm text-slate-700 font-medium">{{ bank }}</p>
                 </div>
               </div>
