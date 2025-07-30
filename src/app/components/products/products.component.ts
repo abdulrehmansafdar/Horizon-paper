@@ -9,24 +9,24 @@ import { Product } from '../../Interfaces/Model';
   styleUrl: './products.component.scss'
 })
 export class ProductsComponent {
- products: Product[] = [
-    {
-      title: "Coated Board",
-      description: "Premium quality coated paper boards with superior finish",
-      badges: ["White Eagle", "Cheeta", "Bike Polo", "HP Brown", "Awami"],
-      details:
-        "Our coated boards offer excellent printability and smooth surface finish, ideal for packaging and printing applications.",
-      gradient: "bg-gradient-to-r from-emerald-600 to-emerald-700",
-      icon: "M9 12l2 2 4-4m5-7a2 2 0 11-4 0 2 2 0 014 0zM15 12a3 3 0 11-6 0 3 3 0 016 0z",
-    },
-    {
-      title: "Uncoated Board",
-      description: "High-strength uncoated paper boards for various applications",
-      badges: ["White Horse", "Super Elephant", "Eagle", "File Card"],
-      details:
-        "Our uncoated boards provide excellent strength and durability, perfect for industrial packaging and file applications.",
-      gradient: "bg-gradient-to-r from-slate-600 to-slate-700",
-      icon: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z",
-    },
-  ];
+products: Product[] = [
+  {
+    title: "Sheet Coating",
+    description: "Premium coated paper sheets with a glossy finish, perfect for vibrant printing and luxury packaging.",
+    badges: ["Glossy", "Printable", "Premium", "Packaging"],
+    details:
+      "Our coated boards offer excellent printability and a smooth surface finish, making them ideal for packaging and high-quality printing applications.",
+    gradient: "bg-gradient-to-r from-emerald-600 to-emerald-700",
+    icon: "M4 6h16M4 10h16M4 14h16M4 18h16", // icon: horizontal lines (sheet/paper)
+  },
+  {
+    title: "Uncoated Flutier",
+    description: "Strong, uncoated fluting medium for corrugated boxes, providing durability and cushioning.",
+    badges: ["Corrugated", "Durable", "Eco-friendly", "Fluting"],
+    details:
+      "Our uncoated flutier is designed for use in corrugated packaging, offering strength and flexibility for protective shipping solutions.",
+    gradient: "bg-gradient-to-r from-emerald-600 to-emerald-700",
+    icon: "M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7M5 7V5a2 2 0 012-2h10a2 2 0 012 2v2", // icon: document/board
+  },
+];
 }

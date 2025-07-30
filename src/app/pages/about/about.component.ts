@@ -24,17 +24,17 @@ export class AboutComponent {
         "Borrower Code: 1017501",
       ],
     },
-    {
-      title: "Financial Information",
-      items: ["Authorized Capital: Rs. 50 Million", "Paid-up Capital: Rs. 50 Million", "Shares: 500,000 @ Rs. 100/-"],
-    },
+    // {
+    //   title: "Financial Information",
+    //   items: ["Authorized Capital: Rs. 50 Million", "Paid-up Capital: Rs. 50 Million", "Shares: 500,000 @ Rs. 100/-"],
+    // },
     {
       title: "Operations",
       items: [
         "Production Started: November 2009",
         "Principal Activity: Paper Board Manufacturing",
         "Market: 100% Local",
-        "Production Capacity: 300 MT/Day",
+        // "Production Capacity: 300 MT/Day",
       ],
     },
   ]

@@ -43,35 +43,35 @@ export class ClientsComponent {
     // { name: 'BASF South East Asia Pte Ltd', location: 'Singapore - Import' },
 
     { name: 'Thiele Kaolin Company', location: 'Korea - Import' },
-    { name: 'Hansol Chemical Co. Ltd', location: 'Korea - Import' },
-    { name: 'Nantex Industry Co. Ltd', location: 'Korea - Import' },
+    { name: 'Hansol Chemical Co.Ltd', location: 'Korea - Import' },
+    { name: 'Nantex Industry Co.Ltd', location: 'Korea - Import' },
     { name: 'Saj International Trading Pte Ltd', location: 'Korea - Import' },
     { name: 'Valtec Engineering Ltd', location: 'Korea - Import' },
     { name: 'Alliance International DWC-LLC', location: 'Korea - Import' },
-    { name: 'Saj International Trading Pte Ltd', location: 'Korea - Import' },
+    // { name: 'Saj International Trading Pte Ltd', location: 'Korea - Import' },
     {
-      name: 'Global Leyi New Materials Technology (NINGBO) Co.Ltd',
+      name: 'GLOBAL LEYI NEW MATERIALS TECHNOLOGY  (NINGBO) CO.,LTD.',
       location: 'Korea - Import',
     },
     { name: 'BASF Pakistan (Pvt) Limited', location: 'Korea - Import' },
-    { name: 'Buckman Laboratorie', location: 'Korea - Import' },
+    { name: 'Buckman Laboratories (Asia)Pte Ltd', location: 'Korea - Import' },
   ];
 
   localSuppliers = [
-    'Archroma Pakistan (pvt) Ltd',
-    'Sitara Chemical (pvt) Ltd',
-    'Rafhan (pvt) Ltd',
-    'Nimir (pvt) Ltd',
+    'Archroma Pakistan',
+    'Sitara Chemical',
+    'Rafhan',
+    'Nimir',
   ];
 
   banks = [
-    'Bank Al Falah, F/7 Markaz Branch, Islamabad',
-    'Bank Al Habib, Industrial Area Branch, Hattar',
-    'Silk Bank, Razia Sharif Plaza, Blue Area, Islamabad',
-    'Meezan Bank, F/7 Markaz Branch, Islamabad',
-    'HBL Main Branch, Blue Area, Islamabad',
-    'UBL F/7 Markaz Branch, Islamabad',
-    'BOK Blue Area Branch, Islamabad',
-    'BOP Blue Area Branch, Islamabad',
+    'Bank Al HAbib',
+    'Bank Alfalah Ltd',
+    'Meezan Bank',
+    'Karandaz',
+    'Parwaaz Financial Services Limited',
+    // 'UBL F/7 Markaz Branch, Islamabad',
+    // 'BOK Blue Area Branch, Islamabad',
+    // 'BOP Blue Area Branch, Islamabad',
   ];
 }

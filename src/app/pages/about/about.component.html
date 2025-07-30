@@ -71,7 +71,8 @@
         </div>
 
         <!-- Info Grid -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+         <div class="max-w-[62rem] mx-auto ">
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8 ">
           <div *ngFor="let section of companyInfo; let i = index" 
                class="group relative bg-gradient-to-br from-white to-slate-50 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-slate-200">
             
@@ -105,9 +106,10 @@
             <div class="absolute inset-0 bg-gradient-to-br from-emerald-50/0 to-emerald-50/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none"></div>
           </div>
         </div>
+        </div>
 
         <!-- Bottom Stats -->
-        <div class="mt-12 pt-8 border-t border-slate-200">
+        <!-- <div class="mt-12 pt-8 border-t border-slate-200">
           <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
             <div class="group">
               <div class="text-2xl font-bold text-emerald-600 mb-1 group-hover:scale-110 transition-transform duration-300">15+</div>
@@ -126,7 +128,7 @@
               <div class="text-sm text-slate-600">Shares</div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
