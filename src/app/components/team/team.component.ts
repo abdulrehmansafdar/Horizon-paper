@@ -2,6 +2,9 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TeamMember } from '../../Interfaces/Model';
 
+interface TeamMemberWithReports extends TeamMember {
+  reportsTo?: string;
+}
 
 @Component({
   selector: 'app-team',
@@ -10,48 +13,79 @@ import { TeamMember } from '../../Interfaces/Model';
   styleUrl: './team.component.scss'
 })
 export class TeamComponent {
-  // Executive Leadership (Top Row - 3 cards)
-  executiveTeam: TeamMember[] = [
-    {
-      name: "Malik Altaf Hussain",
-      role: "CEO & Director",
-      experience: "35 Years' experience in Paper Industry with strategic vision and operational excellence",
-      
-    },
-    {
-      name: "Fatima Bushra",
-      role: "Director",
-      experience: "Strategic Leadership & Operations specialist with proven track record in business growth",
-      
-    },
-    {
-      name: "Irfan Aziz",
-      role: "Secretary",
-      experience: "ACMA, Islamabad. Working in this group since 1999, ensuring fiscal responsibility and company secretary duties",
-    },
-  ];
+  // CEO
+  CEO: TeamMember = {
+    name: "Malik Altaf Hussain",
+    role: "Chief Executive Officer",
+    experience: "Seasoned leader with extensive experience in paper manufacturing industry, driving strategic vision and operational excellence",
+  };
 
-  // Management Team (Bottom Row - 4 cards)
-  managementTeam: TeamMember[] = [
+  // Board of Directors
+  directors: TeamMember[] = [
     {
-      name: "Irfan Aziz",
-      role: "Finance Manager",
-      experience: "ACMA qualified, ensuring fiscal responsibility and financial operations",
-    },
-    {
-      name: "Mudassir Husnain",
-      role: "General Manager",
-      experience: "CA Inter, optimizing operations and productivity since 2002",
+      name: "Ms Fatima Bushra",
+      role: "Director",
+      experience: "Strategic leadership and governance expertise, providing oversight and direction for organizational growth",
     },
     {
       name: "Ahmed Ali Malik",
-      role: "Chief Production Manager",
-      experience: "Production operations specialist ensuring quality and efficiency",
+      role: "Director",
+      experience: "Experienced director with deep industry knowledge and strategic decision-making capabilities",
+    },
+    {
+      name: "Muhammad Ali Malik",
+      role: "Director",
+      experience: "Board member with strong business acumen and commitment to organizational excellence",
+    },
+  ];
+
+  // Senior Management (Reports to CEO & Ahmed Ali)
+  seniorManagement: TeamMemberWithReports[] = [
+    {
+      name: "Mudassir Husnain",
+      role: "General Manager",
+      experience: "Comprehensive management experience overseeing daily operations and strategic initiatives",
+      reportsTo: "CEO & Ahmed Ali",
+    },
+    {
+      name: "Irfan Aziz",
+      role: "Company Secretary",
+      experience: "ACMA qualified professional managing corporate governance and compliance matters",
+      reportsTo: "CEO & Ahmed Ali",
     },
     {
       name: "Ishfaq Ahmed Jan",
-      role: "Marketing Manager",
-      experience: "MBA, driving market expansion in paper industry since 1995",
+      role: "Manager Marketing",
+      experience: "MBA with expertise in market development and customer relationship management",
+      reportsTo: "CEO & Ahmed Ali",
+    },
+    {
+      name: "Shahzad Muhammad",
+      role: "Fund Manager",
+      experience: "Financial expertise in fund management and investment strategies",
+      reportsTo: "CEO & Ahmed Ali",
+    },
+  ];
+
+  // Operational Management (Various reporting structures)
+  operationalTeam: TeamMemberWithReports[] = [
+    {
+      name: "Amjad Mehmood",
+      role: "Admin Manager",
+      experience: "Administrative operations specialist ensuring smooth organizational functioning",
+      reportsTo: "CEO, Ahmed Ali, Muhammad Ali, Fatima Bushra",
+    },
+    {
+      name: "Imran",
+      role: "Internal Audit",
+      experience: "Internal audit professional ensuring compliance and risk management",
+      reportsTo: "CEO & Ahmed Ali",
+    },
+    {
+      name: "Adil Mehmood",
+      role: "Supply Chain & Treasury",
+      experience: "Supply chain optimization and treasury management specialist",
+      reportsTo: "CEO, Ahmed Ali, Muhammad Ali",
     },
   ];
 }
