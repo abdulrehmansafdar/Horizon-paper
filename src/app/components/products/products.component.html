@@ -1,40 +1,64 @@
-<section id="products" class="bg-emerald-50 py-20">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold text-slate-900 mb-4">Our Products</h2>
-          <p class="text-xl text-slate-600 max-w-3xl mx-auto">
-            High-quality paper boards manufactured to meet diverse industry requirements with consistent quality
-            standards.
+<section id="products" class="bg-emerald-50 py-20" data-aos="fade-up">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16" data-aos="zoom-in" data-aos-delay="100">
+      <h2 class="text-4xl font-bold text-slate-900 mb-4">Our Products</h2>
+      <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+        High-quality paper boards manufactured to meet diverse industry
+        requirements with consistent quality standards.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8">
+      <div
+        *ngFor="let product of products; let i = index"
+        class="border border-emerald-200 hover:shadow-xl transition-all duration-300 bg-white rounded-lg"
+        data-aos="fade-up"
+        [attr.data-aos-delay]="i * 100"
+      >
+        <div [class]="product.gradient + ' text-white p-6 rounded-t-lg'">
+          <h3 class="text-2xl flex items-center font-bold">
+            <svg
+              class="mr-3 h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                [attr.d]="product.icon"
+              ></path>
+            </svg>
+            {{ product.title }}
+          </h3>
+          <p
+            [class]="
+              product.title === 'Coated Board'
+                ? 'text-emerald-100'
+                : 'text-slate-100'
+            "
+          >
+            {{ product.description }}
           </p>
         </div>
-
-        <div class="grid lg:grid-cols-2 gap-8">
-          <div *ngFor="let product of products" 
-               class="border border-emerald-200 hover:shadow-xl transition-all duration-300 bg-white rounded-lg">
-            <div [class]="product.gradient + ' text-white p-6 rounded-t-lg'">
-              <h3 class="text-2xl flex items-center font-bold">
-                <svg class="mr-3 h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" [attr.d]="product.icon"></path>
-                </svg>
-                {{ product.title }}
-              </h3>
-              <p [class]="product.title === 'Coated Board' ? 'text-emerald-100' : 'text-slate-100'">
-                {{ product.description }}
-              </p>
-            </div>
-            <div class="p-6">
-              <div class="grid grid-cols-2 gap-3 mb-4">
-                <span *ngFor="let badge of product.badges" 
-                      [class]="product.title === 'Coated Board' ? 
-                        'bg-slate-100 text-slate-800 px-3 py-2 rounded-md text-sm font-medium text-center hover:shadow-sm transition-shadow duration-300 hover:bg-green-50' : 
-                        'border border-slate-300 text-slate-700 px-3 py-2 rounded-md text-sm font-medium text-center hover:shadow-sm transition-shadow duration-300 hover:bg-green-50'"
-                      [class.col-span-2]="badge === 'Economy Plus'">
-                  {{ badge }}
-                </span>
-              </div>
-              <p class="text-slate-600 text-sm">{{ product.details }}</p>
-            </div>
+        <div class="p-6">
+          <div class="grid grid-cols-2 gap-3 mb-4">
+            <span
+              *ngFor="let badge of product.badges"
+              [class]="
+                product.title === 'Coated Board'
+                  ? 'bg-slate-100 text-slate-800 px-3 py-2 rounded-md text-sm font-medium text-center hover:shadow-sm transition-shadow duration-300 hover:bg-green-50'
+                  : 'border border-slate-300 text-slate-700 px-3 py-2 rounded-md text-sm font-medium text-center hover:shadow-sm transition-shadow duration-300 hover:bg-green-50'
+              "
+              [class.col-span-2]="badge === 'Economy Plus'"
+            >
+              {{ badge }}
+            </span>
           </div>
+          <p class="text-slate-600 text-sm">{{ product.details }}</p>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
