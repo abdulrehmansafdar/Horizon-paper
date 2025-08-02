@@ -22,20 +22,20 @@ export class ClientsComponent {
     'Mohsin Match Factory, Peshawar',
     'Alam Match Factory, Peshawar',
     'Khyber Match Factory',
-    'Popular Match Factory',
+    // 'Popular Match Factory',
     'Dawn Paper Mart, Karachi',
     'Kashif Impex, Lahore',
-    'Bao Brothers',
+    // 'Bao Brothers',
     'Al Aziz Packages',
     'Khurshid Impex',
     'Artotec (pvt) Ltd',
     'Modern Paper Mart, Lahore',
     'M. N. Paper Mart, Karachi',
     'A H Paper, Lahore',
-    'Pakistan International Printing',
-    'Royal Paper Mart, Rawalpindi',
-    'Malik Paper Trader, Rawalpindi',
-    'Malik Paper Mart, Rawalpindi',
+    // 'Pakistan International Printing',
+    // 'Royal Paper Mart, Rawalpindi',
+    // 'Malik Paper Trader, Rawalpindi',
+    // 'Malik Paper Mart, Rawalpindi',
   ];
 
   internationalSuppliers: Supplier[] = [
@@ -54,7 +54,7 @@ export class ClientsComponent {
       location: 'Korea - Import',
     },
     { name: 'BASF Pakistan (Pvt) Limited', location: 'Korea - Import' },
-    { name: 'Buckman Laboratories (Asia)Pte Ltd', location: 'Korea - Import' },
+    { name: 'Buckman Laboratories (Asia) Pvt Ltd', location: 'Korea - Import' },
   ];
 
   localSuppliers = [

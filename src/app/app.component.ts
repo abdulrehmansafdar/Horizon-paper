@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
       window.addEventListener('load', () => {
         setTimeout(() => {
           this.loader.hide();
-        }, 1000); // Adjust the delay as needed
+        }, 500); // Adjust the delay as needed
     });
   }
 

@@ -16,7 +16,7 @@
         </div>
       </div>
       <nav class="hidden lg:flex space-x-6">
-        <a *ngFor="let item of navItems" (click)="ScrollToSection(item.href)"
+        <a *ngFor="let item of navItems" (click)="ScrollToSection(item.href)" [href]="'#' + item.href"
           class="hover:text-emerald-400 transition-colors cursor-pointer">
           {{ item.label }}
         </a>
@@ -48,7 +48,7 @@
       <!-- Menu Items -->
       <nav class="flex-1 p-4 overflow-y-auto">
         <div class="space-y-2">
-          <a *ngFor="let item of navItems" (click)="ScrollToSection(item.href)"
+          <a *ngFor="let item of navItems" (click)="ScrollToSection(item.href)" [href]="'#' + item.href"
             class="flex items-center space-x-3 w-full p-4 text-white hover:bg-slate-800 rounded-lg transition-all duration-200 transform hover:scale-102 active:scale-98 cursor-pointer">
             <span class="text-emerald-400">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
