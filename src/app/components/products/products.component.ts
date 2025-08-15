@@ -68,7 +68,12 @@ export class ProductsComponent {
       title: 'Flutier',
       description:
         'Strong, fluting medium for corrugated boxes, providing durability and cushioning.',
-      badges: ['Corrugated', 'Durable', 'Eco-friendly', 'Fluting'],
+      badges: [
+        // 'Corrugated',
+        //  'Durable', 
+        //  'Eco-friendly',
+        //   'Fluting'
+        ],
       details:
         'Our flutier is designed for use in corrugated packaging, offering strength and flexibility for protective shipping solutions.',
       gradient: 'bg-gradient-to-r from-emerald-600 to-emerald-700',
