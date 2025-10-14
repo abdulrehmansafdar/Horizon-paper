@@ -110,7 +110,7 @@
       </div>
 
       <!-- Navigation Buttons -->
-      <button *ngIf="currentSlide > 0"
+      <button *ngIf="currentSlide > 0" title="Previous Slide" aria-label="Previous Slide"
               (click)="prevSlide()"
               class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg border border-emerald-100 flex items-center justify-center text-emerald-600 hover:bg-emerald-50 transition-all duration-300 z-10">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -118,7 +118,7 @@
         </svg>
       </button>
 
-      <button *ngIf="currentSlide < maxSlides - 1"
+      <button *ngIf="currentSlide < maxSlides - 1" title="Next Slide" aria-label="Next Slide"
               (click)="nextSlide()"
               class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg border border-emerald-100 flex items-center justify-center text-emerald-600 hover:bg-emerald-50 transition-all duration-300 z-10">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -129,7 +129,7 @@
 
     <!-- Enhanced Dot Indicators -->
     <div class="flex justify-center mt-8 space-x-3">
-      <button *ngFor="let slide of slides; let i = index"
+      <button *ngFor="let slide of slides; let i = index" title="Go to step" aria-label="Go to step"
               (click)="goToSlide(i)"
               class="relative w-4 h-4 rounded-full transition-all duration-300 group"
               [class.bg-emerald-600]="i === currentSlide"
