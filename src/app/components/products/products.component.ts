@@ -39,8 +39,8 @@ export class ProductsComponent {
         'King/Leader',
         'Awami Board',
         'HP-Brown',
-        'Fauji Board',
-        'Special Fauji Board',
+        'Fouji Board',
+        'Special Fouji Board',
         'Bike Polo',
         'Cheetah',
         'Special Cheetah',
@@ -57,7 +57,13 @@ export class ProductsComponent {
       title: 'Un-Coated Board',
       description:
         'Premium uncoated board with a matte finish, perfect for refined printing and classy packaging.',
-      badges: ['Super Elephant', 'White Back', 'White Horse', 'Ambassador','File card'],
+      badges: [
+        'Super Elephant',
+        'White Back',
+        'White Horse',
+        'Ambassador',
+        'File card',
+      ],
       details:
         'Our un-coated boards offer excellent printability and a smooth surface finish, making them ideal for packaging and high-quality printing applications.',
       gradient: 'bg-gradient-to-r from-emerald-600 to-emerald-700',
@@ -70,12 +76,12 @@ export class ProductsComponent {
         'Strong, fluting medium for corrugated boxes, providing durability and cushioning.',
       badges: [
         // 'Corrugated',
-        //  'Durable', 
+        //  'Durable',
         //  'Eco-friendly',
         //   'Fluting'
-        ],
-      details:'',
-       // 'Our flutier is designed for use in corrugated packaging, offering strength and flexibility for protective shipping solutions.',
+      ],
+      details: '',
+      // 'Our flutier is designed for use in corrugated packaging, offering strength and flexibility for protective shipping solutions.',
       gradient: 'bg-gradient-to-r from-emerald-600 to-emerald-700',
       icon: 'M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7M5 7V5a2 2 0 012-2h10a2 2 0 012 2v2', // icon: document/board
     },

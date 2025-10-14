@@ -1,131 +1,242 @@
 <section id="contact" class="bg-slate-900 text-white py-20">
-      <div class="container mx-auto px-4">
-        <div class="text-center mb-16">
-          <h2 class="text-4xl font-bold mb-4">Contact Information</h2>
-          <p class="text-xl text-slate-300">Get in touch with us for all your paper board requirements</p>
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl font-bold mb-4">Contact Information</h2>
+      <p class="text-xl text-slate-300">
+        Get in touch with us for all your paper board requirements
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8">
+      <div class="bg-slate-800 border border-slate-700 rounded-lg">
+        <div class="p-6 border-b border-slate-700">
+          <h3 class="text-white flex items-center text-xl font-bold">
+            <svg
+              class="mr-3 h-6 w-6 text-emerald-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-4m-2 0H9m-2 0H5m2 0v-4a2 2 0 012-2h2a2 2 0 012 2v4"
+              ></path>
+            </svg>
+            Head Office
+          </h3>
         </div>
-
-        <div class="grid lg:grid-cols-2 gap-8">
-          <div class="bg-slate-800 border border-slate-700 rounded-lg">
-            <div class="p-6 border-b border-slate-700">
-              <h3 class="text-white flex items-center text-xl font-bold">
-                <svg class="mr-3 h-6 w-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-4m-2 0H9m-2 0H5m2 0v-4a2 2 0 012-2h2a2 2 0 012 2v4"></path>
-                </svg>
-                Head Office
-              </h3>
-            </div>
-            <div class="p-6 space-y-4">
-              <div class="flex items-start space-x-3">
-                <svg class="h-5 w-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
-                <div>
-                  <p class="text-slate-300 font-medium">{{ headOffice.address1 }}</p>
-                  <p class="text-slate-300">{{ headOffice.address2 }}</p>
-                </div>
-              </div>
-              <div class="flex items-center space-x-3">
-                <svg class="h-5 w-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                </svg>
-                <p class="text-slate-300">{{ headOffice.phone }}</p>
-              </div>
-              <div class="flex items-center space-x-3">
-                <svg class="h-5 w-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                </svg>
-                <p class="text-slate-300">{{ headOffice.email }}</p>
-              </div>
+        <div class="p-6 space-y-4">
+          <div class="flex items-start space-x-3">
+            <svg
+              class="h-5 w-5 text-emerald-400 mt-1 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+              ></path>
+            </svg>
+            <div>
+              <p class="text-slate-300 font-medium">
+                {{ headOffice.address1 }}
+              </p>
+              <p class="text-slate-300">{{ headOffice.address2 }}</p>
             </div>
           </div>
-
-          <div class="bg-slate-800 border border-slate-700 rounded-lg">
-            <div class="p-6 border-b border-slate-700">
-              <h3 class="text-white flex items-center text-xl font-bold">
-                <svg class="mr-3 h-6 w-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-4m-2 0H9m-2 0H5m2 0v-4a2 2 0 012-2h2a2 2 0 012 2v4"></path>
-                </svg>
-                Factory
-              </h3>
-            </div>
-            <div class="p-6 space-y-4">
-              <div class="flex items-start space-x-3">
-                <svg class="h-5 w-5 text-emerald-400 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                </svg>
-                <div>
-                  <p class="text-slate-300 font-medium">{{ factory.address1 }}</p>
-                  <p class="text-slate-300">{{ factory.address2 }}</p>
-                </div>
-              </div>
-              <div class="flex items-center space-x-3">
-                <svg class="h-5 w-5 text-emerald-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                </svg>
-                <p class="text-slate-300">{{ factory.phone }}</p>
-              </div>
-              <!-- <div class="bg-slate-700 p-3 rounded-lg mt-4">
-                <p class="text-emerald-400 font-medium text-sm">Production Capacity</p>
-                <p class="text-white text-lg font-bold">{{ factory.capacity }}</p>
-              </div> -->
-            </div>
+          <div class="flex items-center space-x-3">
+            <svg
+              class="h-5 w-5 text-emerald-400 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              ></path>
+            </svg>
+            <p class="text-slate-300">{{ headOffice.phone }}</p>
           </div>
-        </div>
-
-        <!-- Contact Form -->
-        <div class="bg-slate-800 border border-slate-700 rounded-lg mt-12">
-          <div class="p-6 border-b border-slate-700">
-            <h3 class="text-white text-xl font-bold">Quick Inquiry</h3>
-            <p class="text-slate-300">Send us a message and we'll get back to you promptly</p>
+          <div class="flex items-center space-x-3">
+            <svg
+              class="h-5 w-5 text-emerald-400 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              ></path>
+            </svg>
+            <p class="text-slate-300">{{ headOffice.email1 }}</p>
           </div>
-          <div class="p-6">
-            <form (ngSubmit)="onSubmit()" class="grid md:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-sm font-medium text-slate-300 mb-2">Name</label>
-                <input
-                  type="text"
-                  [(ngModel)]="contactForm.name"
-                  name="name"
-                  class="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div>
-                <label class="block text-sm font-medium text-slate-300 mb-2">Email</label>
-                <input
-                  type="email"
-                  [(ngModel)]="contactForm.email"
-                  name="email"
-                  class="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  placeholder="your@email.com"
-                  required
-                />
-              </div>
-              <div class="md:col-span-2">
-                <label class="block text-sm font-medium text-slate-300 mb-2">Message</label>
-                <textarea
-                  rows="4"
-                  [(ngModel)]="contactForm.message"
-                  name="message"
-                  class="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
-                  placeholder="Your message..."
-                  required
-                ></textarea>
-              </div>
-              <div class="md:col-span-2">
-                <button  title="Submit Form" aria-label="Submit Form"
-                  type="submit" 
-                  [disabled]="isSubmitting"
-                  class="bg-emerald-600 hover:bg-emerald-700 disabled:opacity-50 px-6 py-2 rounded-md font-medium transition-colors">
-                  {{ isSubmitting ? 'Sending...' : 'Send Message' }}
-                </button>
-              </div>
-            </form>
+          <div class="flex items-center space-x-3">
+            <svg
+              class="h-5 w-5 text-emerald-400 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              ></path>
+            </svg>
+            <p class="text-slate-300">{{ headOffice.email2 }}</p>
           </div>
         </div>
       </div>
-    </section>
+
+      <div class="bg-slate-800 border border-slate-700 rounded-lg">
+        <div class="p-6 border-b border-slate-700">
+          <h3 class="text-white flex items-center text-xl font-bold">
+            <svg
+              class="mr-3 h-6 w-6 text-emerald-400"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-4m-2 0H9m-2 0H5m2 0v-4a2 2 0 012-2h2a2 2 0 012 2v4"
+              ></path>
+            </svg>
+            Factory
+          </h3>
+        </div>
+        <div class="p-6 space-y-4">
+          <div class="flex items-start space-x-3">
+            <svg
+              class="h-5 w-5 text-emerald-400 mt-1 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+              ></path>
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+              ></path>
+            </svg>
+            <div>
+              <p class="text-slate-300 font-medium">{{ factory.address1 }}</p>
+              <p class="text-slate-300">{{ factory.address2 }}</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-3">
+            <svg
+              class="h-5 w-5 text-emerald-400 flex-shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              ></path>
+            </svg>
+            <p class="text-slate-300">{{ factory.phone }}</p>
+          </div>
+          <!-- <div class="bg-slate-700 p-3 rounded-lg mt-4">
+                <p class="text-emerald-400 font-medium text-sm">Production Capacity</p>
+                <p class="text-white text-lg font-bold">{{ factory.capacity }}</p>
+              </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="bg-slate-800 border border-slate-700 rounded-lg mt-12">
+      <div class="p-6 border-b border-slate-700">
+        <h3 class="text-white text-xl font-bold">Quick Inquiry</h3>
+        <p class="text-slate-300">
+          Send us a message and we'll get back to you promptly
+        </p>
+      </div>
+      <div class="p-6">
+        <form (ngSubmit)="onSubmit()" class="grid md:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-2"
+              >Name</label
+            >
+            <input
+              type="text"
+              [(ngModel)]="contactForm.name"
+              name="name"
+              class="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-slate-300 mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              [(ngModel)]="contactForm.email"
+              name="email"
+              class="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              placeholder="your@email.com"
+              required
+            />
+          </div>
+          <div class="md:col-span-2">
+            <label class="block text-sm font-medium text-slate-300 mb-2"
+              >Message</label
+            >
+            <textarea
+              rows="4"
+              [(ngModel)]="contactForm.message"
+              name="message"
+              class="w-full px-3 py-2 bg-slate-700 border border-slate-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              placeholder="Your message..."
+              required
+            ></textarea>
+          </div>
+          <div class="md:col-span-2">
+            <button
+              title="Submit Form"
+              aria-label="Submit Form"
+              type="submit"
+              [disabled]="isSubmitting"
+              class="bg-emerald-600 hover:bg-emerald-700 disabled:opacity-50 px-6 py-2 rounded-md font-medium transition-colors"
+            >
+              {{ isSubmitting ? "Sending..." : "Send Message" }}
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
