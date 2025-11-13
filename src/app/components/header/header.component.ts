@@ -32,7 +32,8 @@ isMobileMenuOpen = false
   }
 
   @HostListener('window:keydown.escape', ['$event'])
-  handleEscapeKey(event: KeyboardEvent) {
+  handleEscapeKey(event: Event) {
+    const keyboardEvent = event as KeyboardEvent;
     if (this.isMobileMenuOpen) {
       this.closeMobileMenu();
     }

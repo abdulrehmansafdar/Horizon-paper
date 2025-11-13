@@ -28,6 +28,6 @@ companyName = "Horizon Paper & Board Mills"
     "Capacity: 300 MT/Day",
   ]
 
-  copyrightText = "© 2024 Horizon Paper & Board Mills (Pvt) Ltd. All rights reserved."
+  copyrightText = `© ${new Date().getFullYear()} Horizon Paper & Board Mills (Pvt) Ltd. All rights reserved.`
   disclaimerText = "Demo portfolio website - All data is fictional for demonstration purposes"
 }
