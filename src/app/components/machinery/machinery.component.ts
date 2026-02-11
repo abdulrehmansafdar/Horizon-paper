@@ -50,7 +50,7 @@ export class MachineryComponent {
   ]
 
   sisterCompanies = [
-    { name: "Paramount Paper Board Mills (pvt) Ltd", location: "Plot No. 99, Phase V, Hattar" },
+    { name: "Paramount Paper Board Mills Ltd", location: "Plot No. 99, Phase V, Hattar" },
     { name: "A A Paper (pvt) Ltd", location: "5 KM, Sheikhupura Road, Sheikhupura" },
   ]
 
@@ -58,7 +58,7 @@ export class MachineryComponent {
     "Malik Board, Sheikhupura",
     "Fazal Paper Board Mills (pvt) Ltd, Okara",
     "Neelum Paper Board Mills (pvt) Ltd, Hattar",
-    "Paramount Paper Board Mills (pvt) Ltd, Hattar",
+    "Paramount Paper Board Mills Ltd, Hattar",
     "Zaman Paper Board Mills (pvt) Ltd, Hattar",
   ]
 }

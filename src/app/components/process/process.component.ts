@@ -63,7 +63,7 @@ export class ProcessComponent implements OnInit, OnDestroy {
     {
       step: 8,
       title: "Packing",
-      desc: "Professional packaging ensuring product protection during transportation and storage",
+      desc: "Professional Bar Code FDA approved packaging ensuring product protection during transportation and storage",
       iconPath: "M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M9 10l3-3m0 0l3 3m-3-3v12",
     },
     {

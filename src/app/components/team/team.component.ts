@@ -44,7 +44,7 @@ export class TeamComponent {
       name: 'Muhammad Ali Malik',
       role: 'Director',
       experience:
-        'Board member with strong business acumen and commitment to organizational excellence',
+        'Visionary board member with exceptional business acumen, recognized for advancing organizational performance and fostering excellence at every level.',
     },
   ];
 

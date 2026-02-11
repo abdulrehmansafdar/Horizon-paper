@@ -36,7 +36,8 @@ export class ProductsComponent {
       description:
         'Premium coated board with a smooth finish, perfect for sharp printing and premium packaging.',
       badges: [
-        'King/Leader',
+        'Champion',
+        'King',
         'Awami Board',
         'HP-Brown',
         'Fauji Board',
@@ -64,20 +65,6 @@ export class ProductsComponent {
       icon: 'M4 6h16M4 10h16M4 14h16M4 18h16', // icon: horizontal lines (sheet/paper)
     },
 
-    {
-      title: 'Flutier',
-      description:
-        'Strong, fluting medium for corrugated boxes, providing durability and cushioning.',
-      badges: [
-        // 'Corrugated',
-        //  'Durable', 
-        //  'Eco-friendly',
-        //   'Fluting'
-        ],
-      details:'',
-       // 'Our flutier is designed for use in corrugated packaging, offering strength and flexibility for protective shipping solutions.',
-      gradient: 'bg-gradient-to-r from-emerald-600 to-emerald-700',
-      icon: 'M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7M5 7V5a2 2 0 012-2h10a2 2 0 012 2v2', // icon: document/board
-    },
+   
   ];
 }

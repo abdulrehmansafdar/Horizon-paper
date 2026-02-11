@@ -15,11 +15,11 @@ export class AboutComponent {
     });
   }
 
-  vision =
-    'To be the market leader and an enduring force in the paper, paper board, positively influencing and providing value to our stakeholders, society and our nation.';
+  vision = 
+  'To be a trusted leader in the paper and packaging industry, delivering value, innovation, and sustainability to our customers, employees, and society.';
 
-  mission =
-    'To strive incessantly for excellence and sustain our position as a preferred supplier of quality paper, board and packaging material within a team environment and with a customer focused strategy.';
+mission = 
+  'To consistently provide high-quality paper, board, and packaging solutions through innovation, customer focus, and a culture of excellence.';
 
   companyInfo = [
     {
@@ -40,7 +40,7 @@ export class AboutComponent {
       items: [
         'Production Started: November 2009',
         'Principal Activity: Paper Board Manufacturing',
-        'Market: 100% Local',
+        'Market: Local & International',
         // "Production Capacity: 300 MT/Day",
       ],
     },

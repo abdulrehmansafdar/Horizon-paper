@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
 companyName = "Horizon Paper & Board Mills"
-  companyType = "(Pvt) Ltd"
+  companyType = "Estab in 2009"
   companyDescription = "Leading paper board manufacturer in Pakistan, committed to quality and excellence since 2009."
 
   quickLinks = [
@@ -28,6 +28,6 @@ companyName = "Horizon Paper & Board Mills"
     "Capacity: 300 MT/Day",
   ]
 
-  copyrightText = `© ${new Date().getFullYear()} Horizon Paper & Board Mills (Pvt) Ltd. All rights reserved.`
-  disclaimerText = "Demo portfolio website - All data is fictional for demonstration purposes"
+  copyrightText = `© ${new Date().getFullYear()} Horizon Paper & Board Mills (Pvt). All rights reserved.`
+  
 }
