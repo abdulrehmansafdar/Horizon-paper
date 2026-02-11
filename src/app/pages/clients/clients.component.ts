@@ -65,7 +65,7 @@ export class ClientsComponent {
   ];
 
   banks = [
-    'Bank Al HAbib',
+    'Bank Al Habib',
     'Bank Alfalah Ltd',
     'Meezan Bank',
     'Karandaz',

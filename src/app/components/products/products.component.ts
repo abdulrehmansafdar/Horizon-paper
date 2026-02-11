@@ -24,7 +24,7 @@ export class ProductsComponent {
     //   title: 'Uncoated Flutier',
     //   description:
     //     'Strong, uncoated fluting medium for corrugated boxes, providing durability and cushioning.',
-    //   badges: ['Corrugated', 'Durable', 'Eco-friendly', 'Fluting'],
+    //   badges: ['Corrugated', 'Durable', 'Eco-friendly'],
     //   details:
     //     'Our uncoated flutier is designed for use in corrugated packaging, offering strength and flexibility for protective shipping solutions.',
     //   gradient: 'bg-gradient-to-r from-emerald-600 to-emerald-700',

@@ -23,7 +23,7 @@ export class ContactComponent {
     address1: "Suite # 402, 4th Floor",
     address2: "Doussal Arcade, Blue Area, Islamabad",
     phone: "051-2604648-50",
-    email: "Irfan_aziz2000@yahoo.com",
+    email: "horizon.imports110@yahoo.com",
   }
 
   factory = {
