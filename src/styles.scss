@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,10 +16,10 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-    "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @apply bg-paper-50 text-primary-800;
 }
 
 /* Smooth scrolling for anchor links */
@@ -30,91 +32,97 @@ html {
   text-wrap: balance;
 }
 
+/* Premium heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  @apply font-semibold;
+}
+
 /* Custom component styles */
 @layer components {
   .btn-primary {
-    @apply bg-emerald-600 hover:bg-emerald-700 text-white font-medium py-2 px-4 rounded-md transition-colors duration-200;
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-md transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5;
   }
 
   .btn-secondary {
-    @apply border border-slate-300 text-slate-700 hover:bg-slate-50 font-medium py-2 px-4 rounded-md transition-colors duration-200;
+    @apply border-2 border-primary-800 text-primary-800 hover:bg-primary-800 hover:text-white font-semibold py-3 px-6 rounded-md transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply border-2 border-white/30 text-white hover:bg-white hover:text-primary-900 font-medium py-2 px-5 rounded-md transition-all duration-300 backdrop-blur-sm;
   }
 
   .card {
-    @apply bg-white rounded-lg shadow-md border border-slate-200;
+    @apply bg-white rounded-xl shadow-lg border border-primary-100/50;
   }
 
-  .card-header {
-    @apply p-6 border-b border-slate-200;
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-1;
   }
 
-  .card-content {
-    @apply p-6;
-  }
-}
-
-/* Custom button hover effects */
-button:hover {
-  transform: translateY(-1px);
-  transition: all 0.2s ease-in-out;
-}
-
-/* Custom card hover effects */
-.hover\:shadow-xl:hover {
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
-/* Backdrop blur effect */
-.backdrop-blur-sm {
-  backdrop-filter: blur(4px);
-}
-
-/* Custom focus styles for form inputs */
-input:focus,
-textarea:focus {
-  outline: none;
-  ring: 2px;
-  ring-color: #10b981;
-}
-
-/* Responsive grid adjustments */
-@media (max-width: 768px) {
-  .grid {
-    gap: 1rem;
+  .section-padding {
+    @apply py-16 md:py-24 px-4;
   }
 
-  .text-5xl {
-    font-size: 2.5rem;
+  .container-custom {
+    @apply max-w-7xl mx-auto;
   }
 
-  .text-7xl {
-    font-size: 3.5rem;
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-serif text-primary-900 mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg md:text-xl text-primary-500 max-w-2xl;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent;
+  }
+
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
   }
 }
 
-/* Animation for process cards */
-.manufacturing-process-card {
-  transition: transform 0.3s ease-in-out;
-}
-
-.manufacturing-process-card:hover {
-  transform: translateY(-5px);
-}
-
-/* Custom scrollbar for better UX */
+/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  @apply bg-primary-100;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #64748b;
-  border-radius: 4px;
+  @apply bg-primary-400 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  @apply bg-primary-500;
+}
+
+/* Form input styles */
+input:focus,
+textarea:focus,
+select:focus {
+  @apply outline-none ring-2 ring-blue-400 border-transparent;
+}
+
+/* Animation delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+
+/* Responsive typography */
+@media (max-width: 768px) {
+  .text-5xl {
+    font-size: 2.5rem;
+  }
+
+  .text-7xl {
+    font-size: 3rem;
+  }
 }

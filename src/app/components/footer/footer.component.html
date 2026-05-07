@@ -1,41 +1,75 @@
- <footer class="bg-slate-950 text-slate-400 py-12">
-      <div class="container mx-auto px-4">
-        <div class="grid md:grid-cols-3 gap-8 mb-8">
-          <div>
-            <div class="flex items-center space-x-2 mb-4">
-              <svg class="h-8 w-8 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-4m-2 0H9m-2 0H5m2 0v-4a2 2 0 012-2h2a2 2 0 012 2v4"></path>
-              </svg>
-              <div>
-                <span class="text-xl font-semibold text-white">{{ companyName }}</span>
-                <p class="text-sm text-slate-400">{{ companyType }}</p>
-              </div>
-            </div>
-            <p class="text-sm leading-relaxed">{{ companyDescription }}</p>
+<footer class="bg-primary-950 text-primary-300 py-16">
+  <div class="container-custom px-4">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+      <!-- Company Info -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="h-12 w-12 rounded-lg overflow-hidden bg-white p-1">
+            <img src="/assets/Horizon.webp" alt="Horizon Paper" class="w-full h-full object-cover rounded">
           </div>
-
           <div>
-            <h4 class="text-white font-semibold mb-4">Quick Links</h4>
-            <ul class="space-y-2 text-sm">
-              <li *ngFor="let link of quickLinks">
-                <a [href]="link.href" class="hover:text-emerald-400 transition-colors">
-                  {{ link.label }}
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 class="text-white font-semibold mb-4">Company Info</h4>
-            <ul class="space-y-2 text-sm">
-              <li *ngFor="let info of companyInfo">{{ info }}</li>
-            </ul>
+            <h3 class="text-white font-serif font-bold text-lg">Horizon Paper & Board Mills</h3>
+            <p class="text-primary-400 text-xs tracking-wider">EST. 2009</p>
           </div>
         </div>
-
-        <div class="border-t border-slate-800 pt-8 text-center">
-          <p class="text-sm">{{ copyrightText }}</p>
-          <p class="text-xs mt-2 text-slate-500">{{ disclaimerText }}</p>
+        <p class="text-primary-400 text-sm leading-relaxed mb-6 max-w-md">
+          {{ companyDescription }}
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="w-10 h-10 rounded-lg bg-primary-800 flex items-center justify-center text-primary-400 hover:bg-blue-600 hover:text-white transition-all duration-300">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+          </a>
+          <a href="#" class="w-10 h-10 rounded-lg bg-primary-800 flex items-center justify-center text-primary-400 hover:bg-blue-600 hover:text-white transition-all duration-300">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
         </div>
       </div>
-    </footer>
+
+      <!-- Quick Links -->
+      <div>
+        <h4 class="text-white font-semibold mb-5">Quick Links</h4>
+        <ul class="space-y-3 text-sm">
+          <li *ngFor="let link of quickLinks">
+            <a [href]="link.href" class="hover:text-blue-400 transition-colors flex items-center gap-2">
+              <span class="w-1 h-1 bg-blue-500 rounded-full"></span>
+              {{ link.label }}
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h4 class="text-white font-semibold mb-5">Contact</h4>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+            </svg>
+            <span class="text-primary-400">Doussal Arcade, Blue Area, Islamabad</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            <span class="text-primary-400">051-2604648-50</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <svg class="w-5 h-5 text-blue-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            <span class="text-primary-400">horizon.imports110&#64;yahoo.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="border-t border-primary-800 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-primary-500 text-sm">{{ copyrightText }}</p>
+        <p class="text-primary-600 text-xs text-center md:text-right">{{ disclaimerText }}</p>
+      </div>
+    </div>
+  </div>
+</footer>

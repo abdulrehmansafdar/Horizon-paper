@@ -1,8 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ContactForm } from '../../Interfaces/Model';
 
+interface ContactForm {
+  name: string;
+  email: string;
+  message: string;
+  company?: string;
+  phone?: string;
+  product?: string;
+  quantity?: string;
+}
 
 @Component({
   selector: 'app-contact',
@@ -17,6 +25,10 @@ export class ContactComponent {
     name: "",
     email: "",
     message: "",
+    company: "",
+    phone: "",
+    product: "",
+    quantity: ""
   }
 
   headOffice = {
@@ -37,16 +49,18 @@ export class ContactComponent {
     if (this.contactForm.name && this.contactForm.email && this.contactForm.message) {
       this.isSubmitting = true
 
-      // Simulate form submission
       setTimeout(() => {
         console.log("Form submitted:", this.contactForm)
-        alert("Thank you for your inquiry! We will get back to you soon.")
+        alert("Thank you for your inquiry! Our team will get back to you within 24 hours.")
 
-        // Reset form
         this.contactForm = {
           name: "",
           email: "",
           message: "",
+          company: "",
+          phone: "",
+          product: "",
+          quantity: ""
         }
 
         this.isSubmitting = false

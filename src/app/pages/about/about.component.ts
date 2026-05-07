@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import * as AOS from 'aos';
 
 @Component({
   selector: 'app-about',
@@ -9,10 +8,11 @@ import * as AOS from 'aos';
   styleUrl: './about.component.scss',
 })
 export class AboutComponent {
-  ngOnInit() {
-    AOS.init({
-      once: true, // Animation runs only once per scroll
-    });
+  ScrollToSection(sectionId: string) {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
   vision = 

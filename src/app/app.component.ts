@@ -13,10 +13,11 @@ import { MachineryComponent } from './components/machinery/machinery.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { LoaderComponent } from "./components/loader/loader.component";
 import { LoaderService } from './services/loader.service';
+import { TrustComponent } from './components/trust/trust.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, FooterComponent, AboutComponent, TeamComponent, ClientsComponent, ContactComponent, ProductsComponent, ProcessComponent, MachineryComponent, HeroComponent, LoaderComponent],
+  imports: [HeaderComponent, FooterComponent, AboutComponent, TeamComponent, ClientsComponent, ContactComponent, ProductsComponent, ProcessComponent, MachineryComponent, HeroComponent, LoaderComponent, TrustComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -12,6 +12,7 @@ export interface Product {
   details: string
   gradient: string
   icon: string
+  image?: string
 }
 
 export interface TeamMember {
