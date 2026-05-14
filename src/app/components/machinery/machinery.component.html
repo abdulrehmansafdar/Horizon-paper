@@ -55,5 +55,42 @@
         </div>
       </div>
     </div>
+
+    <!-- Photo Gallery -->
+    <div class="mt-16">
+      <div class="text-center mb-10">
+        <span class="inline-block text-blue-600 font-semibold text-sm tracking-wider uppercase mb-3">Gallery</span>
+        <h2 class="section-title">Facility & Machinery</h2>
+        <p class="section-subtitle mx-auto">
+          A visual tour of our state-of-the-art manufacturing facility and equipment.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="flex flex-wrap justify-center gap-3 mb-10">
+        <button *ngFor="let cat of galleryCategories"
+          (click)="setGalleryCategory(cat.id)"
+          [class]="activeGallery === cat.id
+            ? 'bg-blue-600 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 shadow-lg shadow-blue-500/25'
+            : 'bg-white text-primary-600 px-5 py-2 rounded-full text-sm font-medium border border-primary-200 hover:border-blue-400 hover:text-blue-600 transition-all duration-300'">
+          {{ cat.name }}
+        </button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div *ngFor="let img of filteredGallery"
+          class="group card overflow-hidden cursor-pointer">
+          <div class="relative h-56 overflow-hidden">
+            <img [src]="img.src" [alt]="img.alt"
+              class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+          </div>
+          <div class="p-4">
+            <h4 class="text-lg font-serif font-bold text-primary-900 group-hover:text-blue-600 transition-colors">{{ img.title }}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
