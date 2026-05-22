@@ -7,7 +7,6 @@ interface Product {
   category: string;
   specs: string[];
   applications: string[];
-  image?: string;
 }
 
 @Component({
@@ -76,7 +75,6 @@ export class ProductsComponent {
       category: 'eggtrays',
       specs: ['30-Cell Standard', 'Recyclable Pulp', 'Moisture Resistant'],
       applications: ['Poultry Farms', 'Egg Distribution', 'Supermarkets', 'Export Packaging'],
-      image: 'assets/eggtray.jpeg',
     },
   ];
 

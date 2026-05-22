@@ -73,15 +73,13 @@ export class MachineryComponent {
   activeGallery = 'all'
 
   galleryImages = [
-    { src: 'assets/base_machine copy.png', alt: 'Base Paper Machine PM 1', category: 'machines', title: 'Base Paper Machine' },
-    { src: 'assets/coating_machine_1 copy.png', alt: 'Coating Machine 1', category: 'coating', title: 'Coating Machine 1' },
-    { src: 'assets/coating_machine_2 copy.png', alt: 'Coating Machine 2', category: 'coating', title: 'Coating Machine 2' },
-    { src: 'assets/coatinf_machine_3 copy.png', alt: 'Coating Machine 3', category: 'coating', title: 'Coating Machine 3' },
-    { src: 'assets/clean_cutter copy.png', alt: 'Clean Cutter Machine', category: 'cutting', title: 'Clean Cutter' },
-    { src: 'assets/warehouse_machines copy.png', alt: 'Warehouse Machines', category: 'warehouse', title: 'Warehouse Section' },
-    { src: 'assets/warehouse_machines_2 copy.png', alt: 'Warehouse Machines 2', category: 'warehouse', title: 'Warehouse Storage' },
-    { src: 'assets/warehouse_machines_3 copy.png', alt: 'Warehouse Machines 3', category: 'warehouse', title: 'Warehouse Equipment' },
-    { src: 'assets/factory_gate copy.png', alt: 'Factory Entrance Gate', category: 'facility', title: 'Factory Entrance' },
+    { src: 'assets/pm1.jpg', alt: 'Base Machine PM 1', category: 'machines', title: 'Base Machine PM 1' },
+    { src: 'assets/pm2.jpg', alt: 'Base Machine PM 2', category: 'machines', title: 'Base Machine PM 2' },
+    { src: 'assets/coating1.jpg', alt: 'Coating Plant 1', category: 'coating', title: 'Coating Plant 1' },
+    { src: 'assets/coating2.jpg', alt: 'Coating Plant 2', category: 'coating', title: 'Coating Plant 2' },
+    { src: 'assets/cutters.jpg', alt: 'Cutters', category: 'cutting', title: 'Cutting Section' },
+    { src: 'assets/finish_goods.jpg', alt: 'Finish Goods', category: 'warehouse', title: 'Finish Goods' },
+    { src: 'assets/entrance.jpg', alt: 'Entrance', category: 'facility', title: 'Entrance' },
   ]
 
   get filteredGallery() {
