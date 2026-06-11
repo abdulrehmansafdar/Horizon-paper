@@ -37,12 +37,14 @@ export class TeamComponent {
       role: 'Director',
       experience:
         'Experienced director with deep industry knowledge and strategic decision-making capabilities',
+      email: 'ahmed_malik@horizonpapermillspk.com',
     },
     {
       name: 'Muhammad Ali Malik',
       role: 'Director',
       experience:
         'Visionary board member with exceptional business acumen, recognized for advancing organizational performance and fostering excellence at every level.',
+      email: 'ali@horizonpapermillspk.com',
     },
   ];
 
@@ -52,15 +54,15 @@ export class TeamComponent {
       name: 'Mudassir Husnain',
       role: 'General Manager',
       experience:
-        'Comprehensive management experience overseeing daily operations and strategic initiatives'
-     
+        'Comprehensive management experience overseeing daily operations and strategic initiatives',
+      email: 'Mudassir@horizonpapermillspk.com',
     },
     {
       name: 'Irfan Aziz',
       role: 'Company Secretary',
       experience:
-        'ACMA qualified professional managing corporate governance and compliance matters'
-     
+        'ACMA qualified professional managing corporate governance and compliance matters',
+      email: 'Irfan@horizonpapermillspk.com',
     },
     {
       name: 'Ishfaq Ahmed Jan',
@@ -73,8 +75,8 @@ export class TeamComponent {
       name: 'Shahzad Muhammad',
       role: 'Fund Manager',
       experience:
-        'Financial expertise in fund management and investment strategies'
-      
+        'Financial expertise in fund management and investment strategies',
+      email: 'Shahzad@horizonpapermillspk.com',
     },
   ];
 
@@ -99,7 +101,7 @@ export class TeamComponent {
       role: 'Supply Chain & Treasury',
       experience:
         'Supply chain optimization and treasury management specialist',
-     
+      email: 'adil@horizonpapermillspk.com',
     },
   ];
 }

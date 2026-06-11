@@ -20,6 +20,7 @@ export interface TeamMember {
   role: string
   experience: string
   ownership?: string
+  email?: string
 }
 export interface ContactForm {
   name: string
