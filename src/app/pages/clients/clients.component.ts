@@ -70,7 +70,7 @@ export class ClientsComponent {
     'Meezan Bank',
     'Karandaz',
     'Parwaaz Financial Services Limited',
-    // 'UBL F/7 Markaz Branch, Islamabad',
+    'UBL Bank',
     // 'BOK Blue Area Branch, Islamabad',
     // 'BOP Blue Area Branch, Islamabad',
   ];
